@@ -1,0 +1,49 @@
+@import 'src/sass/colors'
+@import 'src/sass/display'
+
+
+.cards-wrapper
+  width: 80%
+  display: flex
+  flex-direction: column
+  justify-content: space-between 
+  padding: 2rem
+  //margin: 3rem 20rem 3rem 10rem
+  //padding: 2rem 12rem 2rem 2rem
+  
+.cards-accounts
+  display: -webkit-flex
+  flex-direction: row
+  justify-content: space-between
+
+.cards-accounts app-account
+  margin-right: 1rem
+  flex: 1
+
+.cards-accounts app-credit-account 
+  margin-left: 1rem
+  flex: 1
+
+
+@media screen and (max-width: $screen-lg-min) 
+  .dashboard-container
+    flex-direction: column
+
+  .cards-wrapper
+    width: 100%
+    padding: 1rem
+
+  .cards-accounts
+    flex-direction: column
+  
+  .card-account
+    width: 100%
+    margin: 0
+
+  .cards-accounts app-account
+    margin-right: 0rem
+    margin-bottom: 0.8rem
+
+  .cards-accounts app-credit-account 
+    margin-left: 0rem
+    margin-top: 0.8rem 

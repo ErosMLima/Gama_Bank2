@@ -1,0 +1,68 @@
+@import 'src/sass/colors'
+@import 'src/sass/display'
+
+
+.card-account-container
+  padding: 2rem
+  background: $white
+  border-radius: 8px
+
+.card-name-account
+  display: flex
+  flex-direction: row
+  justify-content: flex-start
+  align-items: center
+
+.card-img-account
+  width: 2rem
+
+.card-name-text-account
+  font-size: 18px
+  line-height: 21px
+  display: flex
+  color: $gray-dark
+  margin: 0!important
+
+
+.card-balance
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+
+.card-balance .card-title-account
+  margin: 0!important
+
+.card-balance .card-account-amount
+  color: $black
+
+.card-account-details
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  justify-content: space-between
+  align-items: center
+
+.card-account-details .card-account-amount
+  color: $green
+
+.card-title-account
+  font-style: normal
+  font-weight: normal
+  font-size: 18px
+  line-height: 21px
+  color: $gray-dark
+
+.card-account-amount
+  font-style: normal
+  font-weight: bold
+  font-size: 30px
+  line-height: 35px
+
+@media screen and (max-width: $screen-lg-min) 
+  .card-account-details
+    flex-direction: column
+    align-items: flex-start
+
+  .card-title-account
+    margin: 0!important
+

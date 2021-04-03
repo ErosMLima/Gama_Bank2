@@ -1,0 +1,91 @@
+@import 'src/sass/colors'
+@import 'src/sass/display'
+
+
+.card-latest-statements-container
+  padding: 2rem 2rem 2rem 2rem
+  background: $white
+  border-radius: 8px
+  width: 100%
+  max-height: 35vh
+  overflow: auto
+
+
+.card-name-statement
+  display: flex
+  flex-direction: row
+  justify-content: flex-start
+  align-items: center
+
+.card-img-statement
+  width: 2rem
+
+.card-name-text-statement
+  font-size: 18px
+  line-height: 21px
+  color: $gray-dark
+  margin: 0!important
+
+.card-statements-wrapper
+  display: flex
+  flex-direction: row
+  flex-wrap: nowrap
+  align-items: center
+  justify-content: space-between
+
+.card-statements-details
+  display: flex
+  flex-direction: row
+  flex-wrap: nowrap
+  justify-content: flex-start
+  align-items: flex-start
+
+.card-statements-details p
+  margin-bottom: 0.5rem!important
+
+.card-statements-title
+  font-style: normal
+  font-weight: bold
+  font-size: 16px
+  line-height: 19px
+  color: $black
+
+.card-statements-discription
+  font-style: normal
+  font-weight: normal
+  font-size: 18px
+  line-height: 21px
+  color: $gray-dark
+
+.card-statements-amount
+  font-style: normal
+  font-weight: 500
+  font-size: 20px
+  line-height: 23px
+  color: $black
+
+.statements-date-text
+  font-style: normal
+  font-weight: normal
+  font-size: 12px
+  line-height: 14px
+  color: $gray-dark
+
+
+@media screen and (max-width: $screen-lg-min) 
+  .card-latest-statements-body
+    padding: 1rem
+    
+
+  .card-statements-wrapper
+    flex-direction: column
+    align-items: flex-start
+
+  .card-latest-statements-container
+    padding: 2rem
+    max-height: 50vh
+
+  .statements-date
+    margin-top: 1rem
+    align-self: flex-end
+

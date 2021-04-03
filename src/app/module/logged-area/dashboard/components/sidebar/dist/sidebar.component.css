@@ -1,0 +1,15 @@
+#sidenav-main {
+  z-index: 1000;
+  position: fixed;
+  left: 250px;
+  width: 250px;
+  min-height: 100vh;
+  margin-left: -250px;
+  overflow-y: auto;
+  background: #37474F;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  /*box-shadow: 20px 20px 20px 20px rgba(255, 40, 0, 0.6); */
+}

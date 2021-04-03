@@ -1,0 +1,35 @@
+<div class="card-transfers-container mt-4">
+  <div class="card-name-transfers mb-4">
+    <img src="assets/icons/dollar-sign.svg" class="card-img-statement mr-4">
+    <p class="card-name-text-transfers">Nova transferência</p>
+  </div>
+
+  <form class="card-transfers-wrapper" [formGroup]="transfersForm" (ngSubmit)="onSubmit()">
+    <div class="form-group-input mb-4">
+      <label for="recipient">Login do destinatário </label>
+      <input type="text" formControlName="contaDestino">
+    </div>
+
+    <div class="form-group-input mb-4">
+      <label for="date">Data da transferência</label>
+      <input type="date" formControlName="data">
+    </div>
+
+    <div class="form-group-input mb-4">
+      <label for="descripton">Descrição</label>
+      <input type="text" formControlName="descricao">
+    </div>
+
+    <div class="form-group-input mb-4">
+      <label for="value">Valor da tranferência</label>
+      <input type="text" formControlName="valor">
+    </div>
+
+    <div class="btn-transfer mt-4 mb-5">
+      <button type="submit" class="form-btn ml-2">
+          Tranferindo>>>
+          <img src="assets/icons/white-arrow.svg">
+      </button>
+    </div>
+  </form>
+</div>

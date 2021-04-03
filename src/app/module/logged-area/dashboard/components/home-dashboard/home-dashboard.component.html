@@ -1,0 +1,8 @@
+<div class="cards-accounts">
+    <app-account [saldoConta]="saldoConta" class="card-account"></app-account>
+    <app-credit-account [saldoCredito]="saldoCredito" class="card-account"></app-credit-account>
+</div>
+
+<div class="card-latest-statements">
+    <app-latest-statements [transacoes]="transacoesContaBanco"></app-latest-statements>
+</div>

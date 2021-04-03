@@ -1,0 +1,30 @@
+<div class="card-deposits-container mt-4">
+  <div class="card-name-deposits mb-4">
+    <img src="assets/icons/dollar-sign.svg" class="card-img-statement mr-4">
+    <p class="card-name-text-deposits">Novos depósitos</p>
+  </div>
+
+  <form class="card-deposits-wrapper" [formGroup]="depositsForm" (ngSubmit)="onSubmit()">
+    <div class="form-group-input mb-4">
+      <label for="date">Data do depósito</label>
+      <input type="date" formControlName="data">
+    </div>
+
+    <div class="form-group-input mb-4">
+      <label for="descripton">Descrições</label>
+      <input type="text" formControlName="descricao">
+    </div>
+
+    <div class="form-group-input mb-4">
+      <label for="value">Valor da tranferência</label>
+      <input type="text" formControlName="valor">
+    </div>
+
+    <div class="btn-deposit mt-4 mb-5">
+      <button type="submit" class="form-btn ml-2">
+          Depositando
+          <img src="assets/icons/white-arrow.svg">
+      </button>
+    </div>
+  </form>
+</div>

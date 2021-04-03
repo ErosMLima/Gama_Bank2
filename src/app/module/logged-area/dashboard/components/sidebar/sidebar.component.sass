@@ -1,0 +1,71 @@
+@import 'src/sass/colors'
+@import 'src/sass/display'
+
+
+.sidebar
+  max-width: 20vh
+  height: 100%
+  background: $green
+  display: flex
+  flex-direction: column
+  justify-content: flex-start
+  align-items: center
+  padding: 0.8rem
+
+
+.sidebar-brand-img 
+  width: 8rem
+  height: 8rem
+  margin: 1rem 0rem
+
+.sidebar-column
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+
+.card-nav-body
+  width: 95px
+  height: 95px
+  background: $purple
+  border-radius: 5px
+  box-shadow: 0px 0px 15px -5px $black
+  margin: 1rem 0rem
+
+.card-nav-body:hover
+  transform: scale(1.05)
+  cursor: pointer
+  transition: 0.4s
+  background-color: $purple-dark
+
+
+.text-card 
+  font-style: normal
+  font-weight: 500
+  font-size: 14px
+  line-height: 16px
+  align-items: flex-start
+  color: $white
+  display: inline-block
+  justify-content: space-between
+
+@media screen and (max-width: $screen-sm-min) 
+  #sidenav-main 
+    max-width: 100%
+    height: auto
+    flex-direction: row
+    overflow-y: scroll
+    position: fixed
+    display: flex
+    bottom: 0
+    justify-content: space-between
+
+  .sidebar-column
+    flex-direction: row
+
+  .card-nav-body
+    margin: 0rem 0.3rem
+    
+  .sidebar-brand-img 
+    display: none

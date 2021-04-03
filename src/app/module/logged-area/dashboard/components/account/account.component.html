@@ -1,0 +1,17 @@
+<div class="card-account-container">
+  <div class="card-name-account mb-4">
+    <img src="assets/icons/dollar-sign.svg" class="card-img-account mr-4">
+    <p class="card-name-text-account">Conta</p>
+  </div>
+
+  <div class="card-balance mb-4">
+    <p class="card-title-account">Saldo disponível</p>
+    <p *ngIf="showValue" class="card-account-amount">{{ saldoConta | currency: 'BRL' }}</p>
+    <p *ngIf="!showValue" class="card-account-amount">R$ --</p>
+  </div>
+
+  <div class="card-account-details">
+    <p class="card-title-account mr-5">Total de Transações</p>
+    <p class="card-account-amount">R$ {{ totalTransactions }}</p>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+<div class="card-credit-account-container ">
+  <div class="card-name mb-4">
+    <img src="assets/icons/credit-account.svg" class="card-img mr-4">
+    <p class="card-name-text">Conta Crédito</p>
+  </div>
+
+  <div class="card-bill  mb-4">
+    <p class="card-title">Fatural atual</p>
+    <p class="card-acc-amount">{{ saldoCredito | currency: 'BRL' }}</p>
+  </div>
+
+  <div class="card-credit-acc-details">
+    <p class="card-title mr-5">Limites disponíveis</p>
+    <p class="card-acc-amount">R$ {{ availableLimit }}</p>
+  </div>
+</div>

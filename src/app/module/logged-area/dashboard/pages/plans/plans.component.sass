@@ -1,0 +1,132 @@
+@import 'src/sass/colors'
+@import 'src/sass/display'
+@import 'src/sass/form'
+
+
+.card-plans-container
+  padding: 2rem 2rem 2rem 2rem
+  background: $white
+  border-radius: 8px
+  max-width: 172vh
+  display: flex
+  align-content: center
+  overflow: auto
+
+.card-plan
+  padding: 1rem 1rem 1rem 1rem
+  background: $white
+  border-radius: 8px
+  border: 1px solid $black
+  margin-right: 1rem
+  width: 260px
+  height: 177px
+
+.card-plan-container, .spinner-border
+  justify-content: center
+  align-content: center
+  display: flex
+
+.card-plan-title
+  font-style: normal
+  font-weight: bold
+  text-transform: uppercase
+  font-size: 21px
+  line-height: 20px
+  color: $black
+
+.card-plan-user
+  font-style: normal
+  font-weight: 500
+  font-size: 18px
+  line-height: 25px
+  color: $gray-dark
+
+
+.card-plan-discription
+  font-style: normal
+  font-weight: normal
+  font-size: 18px
+  line-height: 25px
+  color: $black
+
+
+// form 
+.card-plans-form-container
+  padding: 2rem 2rem 2rem 2rem
+  background: $white
+  border-radius: 8px
+  width: 100%
+
+.card-name-plans
+  display: flex
+  flex-direction: row
+  justify-content: flex-start
+  align-items: center
+
+.card-img-plans
+  width: 2rem
+
+.card-name-text-plans
+  font-size: 18px
+  line-height: 21px
+  color: $gray-dark
+  margin: 0!important
+
+.card-plans-wrapper
+  display: flex
+  flex-direction: column
+  flex-wrap: nowrap
+  align-items: center
+  justify-content: space-between
+
+.form-group-input
+  width: 100%
+  text-align: left
+  background: transparent
+  display: flex
+  flex-direction: column
+
+
+.btn-plans
+  width: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+
+.form-btn
+  width: 50%
+  height: 47.66px
+  padding: 0px 15px 0px 15px
+  background: #68DE5A
+  align-items: center
+  justify-content: space-between
+  border-radius: 20px
+  border: none
+.form-btn:hover
+  cursor: pointer
+  border: 2px solid $purple
+
+.form-btn, text
+  color: $white
+  font-style: normal
+  font-weight: 500
+  font-size: 16px
+  line-height: 19px
+  display: flex
+  align-items: center
+
+@media screen and (max-width: $screen-lg-min) 
+  .card-plan
+    margin-bottom: 1rem
+    flex-direction: column
+    align-items: flex-start
+    width: 100%
+
+  .card-plans-container
+    padding: 1rem
+    display: block
+    justify-content: center
+    align-items: center
+
+  .card-plan-title
+    font-size: 18px

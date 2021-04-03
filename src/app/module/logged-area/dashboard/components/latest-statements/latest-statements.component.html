@@ -1,0 +1,21 @@
+<div class="card-latest-statements-container mt-4">
+  <div class="card-name-statement mb-4">
+    <img src="assets/icons/dollar-sign.svg" class="card-img-statement mr-4">
+    <p class="card-name-text-statement">Últimos lançamentos</p>
+  </div>
+
+  <div class="card-statements-wrapper" *ngFor="let transacao of transacoes">
+    <div class="card-statements-details">
+      <img src="assets/icons/on-debit.svg" class="card-img-statement mr-4">
+      <div class="card-statements">
+        <p class="card-statements-title">Nova Compra no {{ transacao.planoConta.descricao }}</p>
+        <p class="card-statements-discription">{{ transacao.descricao }}</p>
+        <p class="card-statements-amount">{{ transacao.valor | currency: 'BRL' }}</p>
+      </div>
+    </div>
+
+    <div class="statements-date">
+      <p class="statements-date-text">{{ transacao.data | date: '\'Dia\' dd \'de\' MMM' }}</p>
+    </div>
+  </div>
+</div>
