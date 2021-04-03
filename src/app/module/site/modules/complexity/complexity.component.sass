@@ -1,0 +1,40 @@
+
+@import 'src/sass/colors'
+@import 'src/sass/display'
+
+.complexity-container
+  background: url(/assets/images/guys.png) no-repeat center $green
+  background-size: cover
+  height:100vh
+  width: 100%
+  display: flex
+  flex-direction: column
+  justify-content: center
+  padding: 10rem
+
+.complexity-content-title
+  font-weight: bold
+  line-height: 49px
+  color: $white
+  font-size:3em
+
+.complexity-content-discription
+  font-weight: 400
+  line-height: 27px
+  color: $white
+  font-size:1.2em
+  max-width:30%
+
+@media screen and (max-width: $screen-lg-min) 
+  .complexity-container
+    height:90vh
+    justify-content: center
+    padding: 3rem
+
+
+
+  .complexity-content-title
+    font-size: 2.5em
+
+  .complexity-content-discription
+    max-width:100%

@@ -1,0 +1,45 @@
+
+@import 'src/sass/colors'
+@import 'src/sass/display'
+
+.annuity-container
+  background: $purple
+  height:100vh
+  display: flex
+  align-items: center
+  flex-direction: row
+  width: 100%
+  justify-content: space-between
+  padding:10rem
+
+
+.annuity-title-text
+  font-weight: bold
+  color: $white
+  font-size:3em
+
+.annuity-discription-text
+  font-weight: 400
+  line-height: 27px
+  color: $white
+  font-size:1.2em
+  max-width:60%
+
+.annuity-price-text
+  color: #68DE5A
+  font-size: 10em
+
+
+@media screen and (max-width: $screen-lg-min) 
+  .annuity-container
+    height:90vh
+    flex-direction: column
+    padding:3rem
+
+
+  .annuity-price-text
+    font-size: 8em
+  .annuity-discription-text
+    max-width:100%
+
+

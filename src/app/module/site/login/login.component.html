@@ -1,0 +1,39 @@
+<div class="login-container">
+    <a href="#" class="logo">
+        <img src="assets/images/gama-academy-logo.png">
+    </a>
+
+    <div class="login-content-container">
+        
+    
+        <form class="card-login-account p-4" [formGroup]="login" (ngSubmit)="onSubmit()">
+            <div class="form-title ml-2">
+                <h4>Faça seu login</h4>
+            </div>
+            <div class="form-group-input mb-4">
+                <label class="formLabel" for="user">Digite seu usuário</label>
+                <input type="text" name="usuario" formControlName="usuario" placeholder=" ">
+            </div>
+            <div class="form-group-input mb-4">
+                <label class="formLabel" for="password">Digite sua senha</label>
+                <input type="password" name="senha" formControlName="senha" placeholder=" ">
+            </div>
+            <div class="btn-loader mt-4 mb-5">
+                <button type="submit" class="form-btn ml-2" [disabled]="login.invalid">
+                    Enviar
+                    <img src="assets/icons/white-arrow.svg" *ngIf="!isSpinning">
+                    <img src="assets/icons/white-loading.svg" *ngIf="isSpinning">
+                </button>
+            </div>
+            <div class="btn-links mb-3">
+                <a href="/request-new-password" class="mb-2">
+                    Esqueci minha senha >
+                </a>
+                <a href="/" class="mb-2">
+                    Ainda não sou cliente >
+                </a>
+            </div>
+        </form>
+    
+    </div>
+</div>

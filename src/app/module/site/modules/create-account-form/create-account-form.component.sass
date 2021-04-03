@@ -1,0 +1,72 @@
+@import 'src/sass/colors'
+@import 'src/sass/form'
+@import 'src/sass/display'
+
+.create-account 
+  text-align: left
+  background-color: $white-light
+  border-radius: 8px
+
+.form-group-input
+  display: flex
+  flex-direction: column
+  
+.form-title
+  font-style: normal
+  font-weight: 500
+  font-size: 19px
+  line-height: 22px
+  display: flex
+  flex-direction: column
+  align-items: left
+  color: $black-dark
+
+.ml-2
+  margin-left: 0.8rem !important
+
+.form-group-input
+  margin: 1rem
+
+.form-btn
+  width: 90%
+  height: 47.66px
+  padding: 0px 15px 0px 15px
+  background: $gray
+  align-items: center
+  justify-content: space-between
+  border-radius: 20px
+  border: none
+.form-btn:hover
+  cursor: pointer
+  border: 2px solid $purple
+
+.form-btn, text
+  color: $gray-dark
+  font-style: normal
+  font-weight: 500
+  font-size: 15px
+  line-height: 20px
+  display: flex
+  align-items: center
+
+
+
+// @keyframes spin 
+//     from 
+//       transform: rotate(0)
+    
+//     to 
+//       transform: rotate(360deg)
+    
+
+
+// .spinner
+//     animation: spin 1s ease-in-out infinite forwards
+
+
+@media screen and (max-width: $screen-lg-min) 
+  .create-account 
+    margin-top: 1rem
+
+
+

@@ -1,0 +1,63 @@
+@import 'src/sass/colors'
+@import 'src/sass/form'
+@import 'src/sass/display'
+
+.page-error-container 
+  background-color: $purple
+  min-height: 100vh
+  display: grid
+  margin: 0
+
+.page-error-card-container
+  justify-content: center
+  display: flex
+
+.page-error-card
+  width: 455px
+  height: 422px
+  text-align: center
+  background-color: $white-light
+  border-radius: 8px
+
+.error-icon-text
+  padding-left: 6rem
+  padding-right: 6rem
+
+.error-text
+  font-style: normal
+  font-weight: 500
+  font-size: 23px
+  line-height: 27px
+  display: flex
+  align-items: center
+  text-align: center
+  color: $purple
+
+.error-btn-container
+  width: 100%
+  justify-content: center
+  align-items: center
+  display: flex
+
+.error-btn
+  width: 360.79px
+  height: 42.78px
+  align-items: center
+  display: flex
+  color: $white
+  text-decoration: none
+  font-size: 1rem
+  padding: 1rem
+  justify-content: space-between
+  background: $green
+  border-radius: 20px
+.error-btn:hover
+  transform: scale(1.02)
+  cursor: pointer
+  transition: 1s
+  background-color: $green-dark
+
+@media screen and (max-width: $screen-lg-min) 
+  .page-error-card-container
+    margin: 0rem 
+    width: 70%

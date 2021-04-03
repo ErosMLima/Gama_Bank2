@@ -1,0 +1,95 @@
+
+@import 'src/sass/colors'
+@import 'src/sass/display'
+
+
+.home-container 
+  background-color: $purple
+  min-height: 100vh
+  display: grid
+  margin: 0
+
+.logo
+  justify-content: center
+  margin-left: 80px
+  margin-top: 50px
+
+.home-content-container 
+  background: url('/assets/images/happy.png') 
+  background-repeat: no-repeat
+  background-position: center bottom
+  background-color: $purple
+  min-height: 88vh
+  width: 100%
+  display: flex
+  margin: 0
+  align-items: center
+  justify-content: space-around
+
+.home-content-access
+  width: 281px
+  height: 173px
+  font-style: normal
+  font-weight: normal
+  font-size: 29px
+  line-height: 34px
+  flex-direction: column
+  align-items: center
+  color: $white
+
+.btn-access
+  overflow: hidden
+  background: $white
+  width: 100%
+  height: 42px
+  border-radius: 20px
+  border: none
+  cursor: pointer
+  padding: 0px 15px 0px 15px
+  align-items: center
+  justify-content: space-between
+.btn-access:hover
+  cursor: pointer
+  border: 2px solid $green
+
+.btn-access, home-content-text 
+  color: $purple
+  font-style: normal
+  font-weight: 500
+  font-size: 17px
+  line-height: 20px
+  display: flex
+  align-items: center
+
+.account-form
+  max-width:400px
+
+.loading-arrow
+  animation: 1.1s linear 0.2s infinite alternate slidein
+
+@keyframes slidein 
+  from 
+    margin-right: 0rem
+
+  to 
+    margin-right: 6rem
+  
+  
+  
+
+  
+
+
+@media screen and (max-width: $screen-lg-min) 
+  .home-content-container 
+    background: none
+    background-color: $purple
+    align-items: center
+  .account-form
+    max-width:300px
+
+  .logo
+    display: none
+
+
+
