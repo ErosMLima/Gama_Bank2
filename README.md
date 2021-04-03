@@ -24,7 +24,7 @@ Project developed in participation in the Academy Gama Accenture. It consists of
 ## Application Demo :
 Status 
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/x/deploy-status)](https://fakebank.netlify.app/)
+Heroku
 
 ## Prerequisites (need this tools for the app work)::
 
